@@ -12,6 +12,7 @@
   <modules>
     <module>wiring-beans</module>
       <module>using-abstractions</module>
+      <module>beanscopes-lifecyle</module>
   </modules>
 
   <properties>
