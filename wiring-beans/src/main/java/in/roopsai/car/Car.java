@@ -1,10 +1,14 @@
-package in.roopsai.user;
+package in.roopsai.car;
 
 public class Car {
 
     private String name;
 
-    public Car(String name) {
+    public String move() {
+        return "Driving a car";
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
