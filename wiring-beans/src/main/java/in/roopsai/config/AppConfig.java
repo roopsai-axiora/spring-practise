@@ -2,6 +2,7 @@ package in.roopsai.config;
 
 import in.roopsai.driver.Driver;
 import in.roopsai.car.Car;
+import in.roopsai.parrot.Parrot;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -30,6 +31,20 @@ public class AppConfig {
         var driver = new Driver();
         driver.setCar(bmw()); // wiring
         return driver;
+    }
+
+    @Bean
+    public Parrot kiki() {
+        var parrot = new Parrot();
+        parrot.setName("kiki");
+        return parrot;
+    }
+
+    @Bean
+    public Parrot kurt() {
+        var parrot = new Parrot();
+        parrot.setName("kurt");
+        return parrot;
     }
 
     @Bean

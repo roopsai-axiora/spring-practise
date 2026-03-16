@@ -2,6 +2,7 @@ package in.roopsai;
 
 import in.roopsai.config.AppConfig;
 import in.roopsai.driver.Driver;
+import in.roopsai.person.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -19,5 +20,8 @@ public class App
 
         var doe = ctx.getBean("doe", Driver.class);
         System.out.println(doe.getCar()); // auto-wiring beans where we enable Spring to provide the value via method parameter.
+
+        var person = ctx.getBean(Person.class);
+        System.out.println(person.getParrot());
     }
 }
