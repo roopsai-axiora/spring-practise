@@ -3,7 +3,9 @@ package in.roopsai.comment.service;
 import in.roopsai.comment.model.Comment;
 import in.roopsai.comment.proxy.CommentNotificationProxy;
 import in.roopsai.comment.repository.CommentRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CommentService {
 
     private final CommentNotificationProxy commentNotificationProxy;
